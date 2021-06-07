@@ -37,9 +37,10 @@ app.get("/about", (req, res) => {
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    helpText: "Help message",
-    title:
+    helpText:
       "The app may not work currently because the weatherstack.com api gives us fixed requests i.e, 250 requests after that it throws error. So you may get 'Unable to get weather information try again' error message",
+
+    title: "Help",
     name: "Ram Kumar Shrestha",
   });
 });
